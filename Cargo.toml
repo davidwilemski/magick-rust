@@ -14,7 +14,7 @@ build = "build.rs"
 libc = "0.2.70"
 
 [build-dependencies]
-bindgen = "0.59"
+bindgen = { version = "0.59", default-features = false, features = [ "logging", "runtime", "which-rustfmt" ] }
 pkg-config = "0.3"
 
 [features]
